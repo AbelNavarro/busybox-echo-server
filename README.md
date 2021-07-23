@@ -7,7 +7,7 @@ This is my first docker container-a simple UDP echo server built on busybox.
 To run this as a container named `echo`, run
 
 ```sh
-$ docker run --rm --name echo -p 1234:1234  jdkelley/busybox-echo-server:latest
+$ docker run --rm --name echo -p 1234:1234/udp anavarro/busybox-echo-server:latest
 ```
 
 ## Use
