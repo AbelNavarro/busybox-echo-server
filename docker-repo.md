@@ -4,20 +4,20 @@ busybox-echo-server
 
 # Short Description
 
-An echo server built off of busybox.
+An UDP echo server built off of busybox.
 
 # Full Description
 
 # Echo Server
 
-This is my first docker container-a simple echo server built on busybox. [Dockerfile](https://github.com/jdkelley/busybox-echo-server)
+This is my first docker container-a simple echo server built on busybox. [Dockerfile](https://github.com/AbelNavarro/busybox-echo-server)
 
 #### Run
 
 To run this as a container named `echo`, run
 
 ```sh
-$ docker run --rm --name echo -p 1234:1234  jdkelley/busybox-echo-server:latest
+$ docker run --rm --name echo -p 1234:1234 anavarro/busybox-echo-server:latest
 ```
 
 #### Use
@@ -25,7 +25,7 @@ $ docker run --rm --name echo -p 1234:1234  jdkelley/busybox-echo-server:latest
 Use netcat to see if the echo server is up and running.
 
 ```sh
-$ nc 0.0.0.0 1234
+$ nc 0.0.0.0 -u 1234
 ```
 
 #### References
